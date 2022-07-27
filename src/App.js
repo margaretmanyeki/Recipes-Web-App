@@ -1,10 +1,13 @@
 import React from "react";
 import Meal from "./Components/Meal";
+import{Routes,Route} from "react-router-dom"
 
 function App(){
     return(
         <>
-        <Meal/>
+       < Routes>
+        <Route path="/" element={<Meal/>}/>
+        </Routes>
         </>
     )
 }

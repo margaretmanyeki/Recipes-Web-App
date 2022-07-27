@@ -22,7 +22,7 @@ const Meal=()=>{
     }
 
     const searchRecipe=(event)=>{
-        if(event.key=="Enter"){
+        if(event.key==="Enter"){
             setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         }
     }
