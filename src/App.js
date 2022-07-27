@@ -8,4 +8,4 @@ function App(){
         </>
     )
 }
-export dafault App;
+export default App;
