@@ -94,6 +94,8 @@ body{
 .ingredients.instructions{
     flex-basis: 50%;
     text-align: justify;
+    font-size: medium;
+    font-weight: bold;
 }
 .ingredients h4{
     margin-top: 1.5rem;
