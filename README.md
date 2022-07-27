@@ -2,3 +2,5 @@
 
 <h2>You can enter the name of your favourite soups,desserts,pastries etc
  to search for instructions on how to prepare them.</h2>
+
+ <h2>You can also search a recipe using alphabets</h2>
