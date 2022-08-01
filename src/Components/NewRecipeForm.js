@@ -13,11 +13,11 @@ function handleFormSubmit(event) {
     event.preventDefault();
 
         //Fetch the json api and POST
-        if (formData.strMeal === "" || formData.strDrinkAlternate === "" || formData.strCategory === ""||
+        if (formData.strMeal === "" || formData.strCategory === ""||
         formData.strArea === ""|| formData.strInstructions === "") {
             alert("Fill all inputs");
           } else {
-            fetch("https:/www.themealdb.com/api/json/v1/1/search.php?f=a", {
+            fetch("https://thawing-crag-91387.herokuapp.com/meals", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -46,26 +46,26 @@ function handleFormSubmit(event) {
     <form className="new-recipe-form" onSubmit={handleFormSubmit}>
       <input
         placeholder="Meal"
-        name="meal"
-        value={formData.meal}
+        name="strMeal"
+        value={formData.strMeal}
         onChange={handleChange}
       />
       <input
         placeholder="Area"
-        name="area"
-        value={formData.area}
+        name="strArea"
+        value={formData.strArea}
         onChange={handleChange}
       />
     <input
         placeholder="Category"
-        name="category"
-        value={formData.category}
+        name="strCategory"
+        value={formData.strCategory}
         onChange={handleChange}
         />
         <input
         placeholder="Instructions"
-        name="instructions"
-        value={formData.instructions}
+        name="strInstructions"
+        value={formData.strInstructions}
         onChange={handleChange}
 />
       <input type="submit" value="Submit" />
