@@ -8,7 +8,7 @@ import NewRecipeForm from "./Components/NewRecipeForm";
 function App(){
     const [show, setShow] =useState(true)
     const [recipes, setRecipes] = useState([]); useEffect(() => {
-        fetch("https://thawing-crag-91387.herokuapp.com/meals")
+        fetch("www.themealdb.com/api/json/v1/1/search.php?f=a")
    
          .then((response) => response.json())
          .then((data) => setRecipes(data));
